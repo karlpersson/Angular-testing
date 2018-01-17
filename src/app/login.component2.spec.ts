@@ -7,6 +7,10 @@ class MockAuthService{
         return this.authenticated;
     }
 
+    isAuthenticatedAsync() {
+        return Promise.resolve(true);
+    }
+
 }
 
 describe('Component: Login with mocked service',() => {
