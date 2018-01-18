@@ -53,5 +53,9 @@ describe('Component: Login (async)', () => {
     it('Component needslogin should return false', () => {
         expect(component.needsLogin()).toBe(false);
     });
+    
+    it('Service injected via component should be and instance of MockAuthService', () => {
+        expect(componentService instanceof MockAuthService).toBeTruthy();
+      });
 
 });
