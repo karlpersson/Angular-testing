@@ -26,7 +26,7 @@ export class User{
         login(email, password){
             console.log(`Login ${email} ${password}`);
             if(email && password){
-                console.log{`Emitting`};
+                console.log(`Emitting`);
                 this.loggedIn.emit(new User(email, password));
             }
         }
