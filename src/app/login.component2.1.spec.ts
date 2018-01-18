@@ -29,7 +29,7 @@ describe('Component: Login', () => {
     });
 
     //testing inputs
-    it('Setting enabled to false disables the submit button', () => {
+    xit('Setting enabled to false disables the submit button', () => {
         component.enabled = false;
     });
 

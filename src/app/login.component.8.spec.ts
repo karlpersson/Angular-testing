@@ -14,7 +14,7 @@ class MockAuthService extends AuthService {
       }
   }
 
-describe('Component: Login (async)', () => {
+describe('Component: Login (dependency injection)', () => {
     let component: LoginComponent;
     let fixture: ComponentFixture<LoginComponent>;
     let authService: AuthService;
