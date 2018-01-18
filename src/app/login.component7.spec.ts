@@ -41,5 +41,16 @@ describe('Component: Login (async)', () => {
               });
             component.ngOnInit();
 
-      }))
+      }));
+
+      it('Button label via fakeAsync() and tick()', fakeAsync(() => {
+            expect(el.nativeElement.textContent.trim()).toBe('');
+            fixture.detectChanges();
+            expect(el.nativeElement.textContent.trim()).toBe('Login');
+            spyOn(authService, 'isAuthenticated').and.returnValue(Promise.resolve(true));
+            component.ngOnInit();
+            tick();
+            fixture.detectChanges();
+            expect(el.nativeElement.textContent.trim()).toBe('Logout');
+      }));
 });
