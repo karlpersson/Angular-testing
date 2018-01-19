@@ -27,7 +27,7 @@ export class LoginComponent3{
         this.form = this.fb.group({
             email: ['',[Validators.required, Validators.pattern("[^ @]*@[^ @]*")]],
             password: ['', [Validators.required, Validators.minLength(8)]],
-        })
+        });
     }
 
     login() {
