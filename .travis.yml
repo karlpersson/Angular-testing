@@ -20,8 +20,7 @@ before_install:
  - sudo dpkg -i google-chrome*.deb
 
 before_script:
-  - npm install -g @angular/cli
-  - npm install -g @angular-devkit/core
+  - npm install -g @angular/cli@1.6.3 @angular-devkit/core
 
 script:
   - ng build --prod --aot=false
