@@ -38,7 +38,7 @@ describe('Router App', () => {
         fixture = TestBed.createComponent(AppComponent);
 
         router.initialNavigation();
-    };
+    });
 
     it('fakeAsync works', fakeAsync(() => {
         let promise = new Promise((resolve) => {
